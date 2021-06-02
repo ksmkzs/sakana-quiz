@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>魚の漢字クイズ</title>
+  <link rel="manifest" href="manifest.json">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+		<h2>魚の漢字クイズ</h2>
+	</header>
+	<div id=first><h3>難しい魚の漢字の読みをテストしよう！</h3>
+	<p>ボタンを押してスタートだ！</p><p>全１０問で制限時間は各問10秒！</p></div>
+
+	<div id="question"></div>
+	<div id="resultA"></div><span id="small"></span><div id="score"></div>
+    <div>
+      <ul id="answers"></ul>
+    </div>
+    <button id="start_button" type="button" class="button">スタート</button>
+    <div id="jikan"></div>
+		<div id="restart"></div>
+    <table id="inTable">
+      <tr>
+				<th></th>
+        <th>問題</th>
+        <th>答え</th>
+        <th>あなたの<br>回答</th>
+        <th>正誤</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+    </table>
+		<script src="index.js"></script>
+
+		<script>
+		  if('serviceWorker' in navigator) {
+				window.addEventListener("load",async () => {
+					await navigator.serviceWorker.register("sw.js");
+
+				});
+			}
+		</script>
+  </body>
+</html>
